@@ -25,7 +25,7 @@ fi
 
 # Install AUR packages
 echo "Installing AUR packages..."
-yay -S --noconfirm cc65
+yay -S --noconfirm asm6f
 
 # Update system
 echo "Updating ALL packages..."
