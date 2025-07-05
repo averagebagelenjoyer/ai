@@ -1,4 +1,6 @@
+#!/bin/bash
+set -euo pipefail
 sudo pacman -S --noconfirm git
 git clone https://aur.archlinux.org/yay.git
-(cd yay && makepkg -si)
+(cd yay && makepkg -si --noconfirm)
 rm -rf yay
