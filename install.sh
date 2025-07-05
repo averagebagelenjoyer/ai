@@ -11,7 +11,7 @@ sudo pacman -Syu
 
 # Install packages
 echo "Installing packages..."
-sudo pacman -S --noconfirm base-devel git firefox geany gvfs gvfs-mtp gvfs-gphoto2 polkit thunar-volman fceux xfce4 xfce4-goodies xorg-server xorg-xinit xorg-apps xorg-twm xterm
+sudo pacman -S --noconfirm base-devel xorg xf86-input-libinput 
 
 # Install yay
 echo "Installing yay..."
@@ -23,12 +23,12 @@ else
     echo "Skipping..."
 fi
 
-# Install AUR packages
-echo "Installing AUR packages..."
-
 # Update system
 echo "Updating ALL packages..."
 yay -Syu
+
+# Install AUR packages
+echo "Installing AUR packages..."
 
 # Setup Xorg
 echo "Setting up Xorg..."
